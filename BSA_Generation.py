@@ -128,7 +128,6 @@ def generate_prism_faces(num_sides):
 def generate_prism_point_cloud(num_sides, height, num_points):
     vertices = generate_prism_vertices(num_sides, height)
     faces = generate_prism_faces(num_sides)
-    # 在棱柱体表面上均匀生成点云和法向量
     point_cloud = []
     normals = []
     for face in faces:
@@ -172,8 +171,6 @@ def generate_pyramid_faces(num_sides):
 def generate_pyramid_point_cloud(num_sides, height, num_points):
     vertices = generate_pyramid_vertices(num_sides, height)
     faces = generate_pyramid_faces(num_sides)
-
-    # Generate point clouds and normal vectors uniformly on the surface of a pyramid
     point_cloud = []
     normals = []
     for face in faces:
