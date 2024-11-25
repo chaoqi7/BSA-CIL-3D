@@ -10,7 +10,7 @@ Boosting the Class-Incremental Learning in 3D Point Clouds via Zero-Collection-C
 - **The Dataset Creation Process**
 <p align="center"><img align="center" width="920" src="./BSA_Dataset.png"/></p>
 
-- **Data Samples**
+- **[Data Samples](./BSA_Dataset)**
 
 - **Dataset Generation Code**
   
