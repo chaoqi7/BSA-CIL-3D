@@ -108,8 +108,8 @@ def generate_prism_vertices(num_sides, height):
         theta = 2 * np.pi * i / num_sides
         x = np.cos(theta)
         y = np.sin(theta)
-        vertices.append((x, y, 0))  # 底部顶点
-        vertices.append((x, y, height))  # 顶部顶点
+        vertices.append((x, y, 0))  # Bottom vertex
+        vertices.append((x, y, height))  # Top vertex
     return vertices
 
 def generate_prism_faces(num_sides):
@@ -135,7 +135,7 @@ def generate_prism_point_cloud(num_sides, height, num_points):
         v0 = np.array(vertices[face[0]])
         v1 = np.array(vertices[face[1]])
         v2 = np.array(vertices[face[2]])
-        normal = np.cross(v1 - v0, v2 - v0)  # 计算面的法向量
+        normal = np.cross(v1 - v0, v2 - v0)  # Calculate the normal vector of the surface
         for _ in range(int(num_points/len(faces))):
             b1 = np.random.uniform(0, 1)
             b2 = np.random.uniform(0, 1)
@@ -154,17 +154,17 @@ def generate_pyramid_vertices(num_sides, height):
         theta = 2 * np.pi * i / num_sides
         x = np.cos(theta)
         y = np.sin(theta)
-        vertices.append((x, y, 0))  # 底部顶点
-    vertices.append((0, 0, height))  # 顶部顶点
+        vertices.append((x, y, 0))  # Bottom vertex
+    vertices.append((0, 0, height))  # Top vertex
     return vertices
 
 
 def generate_pyramid_faces(num_sides):
     faces = []
     for i in range(num_sides):
-        face = [i, (i + 1) % num_sides, num_sides]  # 底部三角形
+        face = [i, (i + 1) % num_sides, num_sides]  # Bottom triangle
         faces.append(face)
-    bottom_face = list(range(num_sides))  # 底部多边形
+    bottom_face = list(range(num_sides))  # Bottom polygon
     faces.append(bottom_face)
     return faces
 
@@ -173,14 +173,14 @@ def generate_pyramid_point_cloud(num_sides, height, num_points):
     vertices = generate_pyramid_vertices(num_sides, height)
     faces = generate_pyramid_faces(num_sides)
 
-    # 在棱锥体表面上均匀生成点云和法向量
+    # Generate point clouds and normal vectors uniformly on the surface of a pyramid
     point_cloud = []
     normals = []
     for face in faces:
         v0 = np.array(vertices[face[0]])
         v1 = np.array(vertices[face[1]])
         v2 = np.array(vertices[face[2]])
-        normal = np.cross(v1 - v0, v2 - v0)  # 计算面的法向量
+        normal = np.cross(v1 - v0, v2 - v0)  # Calculate the normal vector of the surface
         for _ in range(int(num_points/len(faces))):
             b1 = np.random.uniform(0, 1)
             b2 = np.random.uniform(0, 1)
@@ -267,26 +267,6 @@ if __name__ == '__main__':
         data = np.hstack((points, normals))
         np.savetxt(os.path.join(root_dir, model_name, model_name + '_' + str(i + 1).zfill(4) + '.txt'), data, delimiter=',', fmt='%f')
 
-    '''
-    files_train, files_test = [], []
-    for item in ['basiccone','prism','cylinder','pyramid','ellipsoid','polyhedron','shape0','shape1','shape2','shape3','shape4','shape5','shape6','shape7','shape8','shape9','shape10','shape11', 'shape12', 'shape13', 'shape14', 'shape15', 'shape16', 'shape17', 'shape18', 'shape19']:
-        path = os.path.join(root_dir, item)
-        all_files = [os.path.splitext(os.path.basename(f))[0] for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
-        selected_files = random.sample(all_files, 500)
-        remaining_files = list(set(all_files) - set(selected_files))
-
-        files_train = files_train + remaining_files
-        files_test = files_test + selected_files
-
-    with open(os.path.join(root_dir,'BasicShape_train.txt'), 'w') as f:
-        for item in files_train:
-            f.write("%s\n" % item)
-
-    with open(os.path.join(root_dir,'BasicShape_test.txt'), 'w') as f:
-        for item in files_test:
-            f.write("%s\n" % item)
-
-    '''
 # step2: generate shape assemblies
     # with Pool() as p:
     #    p.map(generate_shapes, range(20))
