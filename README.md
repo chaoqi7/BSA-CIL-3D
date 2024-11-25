@@ -7,15 +7,15 @@ Boosting the Class-Incremental Learning in 3D Point Clouds via Zero-Collection-C
 - [Code](#Code)
 
 ## 🎨BSA Dataset
-- **The Dataset Creation Process**
+- The Dataset Creation Process
 <p align="center"><img align="center" width="920" src="./BSA_Dataset.png"/></p>
 
-- **[Data Samples](./BSA_Dataset)**
+- [Data Samples](./BSA_Dataset)
 
-- **[Dataset Generation Code](./BSA_Generation.py)**
+- [Dataset Generation Code](./BSA_Generation.py)
   
 ## 🌈Pretrained Models
-The pre-trained models are available [LINK].
+The pre-trained models are available [[LINK](https://www.alipan.com/s/Jr3T2QMi6Cf)].
 - The dVAE model is embedded in the tokenizer to supervise the predicted tokens in the pre-training stage.
 - The Point-bert model is embedded in the backbone for continual learning.
 
