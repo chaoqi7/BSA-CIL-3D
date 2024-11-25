@@ -12,7 +12,7 @@ Boosting the Class-Incremental Learning in 3D Point Clouds via Zero-Collection-C
 
 - **[Data Samples](./BSA_Dataset)**
 
-- **Dataset Generation Code**
+- **[Dataset Generation Code](./BSA_Generation.py)**
   
 ## 🌈Pretrained Models
 
