@@ -8,7 +8,7 @@ Boosting the Class-Incremental Learning in 3D Point Clouds via Zero-Collection-C
 
 ## 🎨BSA Dataset
 - **The Dataset Creation Process**
-<p align="center"><img align="center" width="800" src="./BSA_Dataset.png"/></p>
+<p align="center"><img align="center" width="860" src="./BSA_Dataset.png"/></p>
 
 ## 🌈Pretrained Models
 
