@@ -22,5 +22,6 @@ The pre-trained models are available [[LINK](https://www.alipan.com/s/Jr3T2QMi6C
 
 ## 🔍Experiments
 
-- Comparisons on Benchmarks in terms of $A_b$
+- Comparisons on Benchmarks in terms of ${\mathcal{A}_b}$ and $\bar{\mathcal{A}} $
+  
 ## 💻Code
