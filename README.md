@@ -34,6 +34,6 @@ The pre-trained models are available [[LINK](https://www.alipan.com/s/Jr3T2QMi6C
 | InOR-Net | 69.4 | 83.7 |
 | Ours | **83.4** | **89.3** |
 
-![screenshot](https://hv.z.wiki/autoupload/20241126/YBlx/978X653/Experiment1.png)
+![screenshot](https://cdn.z.wiki/autoupload/20241126/alYG/587X392/Experiment1.png)
   
 ## 💻Code
