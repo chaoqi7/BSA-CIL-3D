@@ -22,20 +22,16 @@ The pre-trained models are available [[LINK](https://www.alipan.com/s/Jr3T2QMi6C
 
 ## 🔍Experiments
 
-- Comparisons on Benchmarks in terms of ${\mathcal{A}_b}$ and $\bar{\mathcal{A}} $
+- Comparisons on ShapeNet55 (18 exemplar samples per class)
 
-\begin{table}
-    \centering
-    \begin{tabular}{cccc}
-\hline
-Exemplar             & \begin{tabular}[c]{@{}c@{}}Regularization\\ Item\end{tabular} & ${\mathcal{A}_b}$            & $\bar{\mathcal{A}} $           \\ \hline
-\multirow{2}{*}{w/o}  & w/o             & 66.3 & 77.2 \\
-                     & w/            & \textbf{67.7}          & \textbf{78.9}          \\ \hline
-\multirow{2}{*}{w/} & w/o             & 80.1          & 87.2 \\
-                     & w/            & \textbf{84.3} & \textbf{90.9}          \\ \hline
-\end{tabular}
-    \caption{Experimental results on ModelNet40 with or without regularizations, considering different exemplar settings.}
-    \label{table8}
-\end{table}
+| Model | ${\mathcal{A}_b}$ | $\bar{\mathcal{A}} $ |
+|--|--|--|
+| LwF | 39.5 | 63.4 |
+| iCaRL|44.6| 69.5 |
+| RPS-Net | 63.5 | 78.4 |
+| BiC | 64.2 | 78.8 |
+| I3DOL | 67.3 | 81.6 |
+| InOR-Net | 69.4 | 83.7 |
+| Ours | **83.4** | **89.3** |
   
 ## 💻Code
