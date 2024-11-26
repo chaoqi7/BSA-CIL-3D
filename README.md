@@ -35,5 +35,16 @@ The pre-trained models are available [[LINK](https://www.alipan.com/s/Jr3T2QMi6C
 | Ours | **83.4** | **89.3** |
 
 ![screenshot](https://cdn.z.wiki/autoupload/20241126/alYG/587X392/Experiment1.png)
+
+- Comparisons on ShapeNet55 (exemplar-free)
+
+| Model | ${\mathcal{A}_b}$ | $\bar{\mathcal{A}} $ |
+|--|--|--|
+| FETRIL | 55.0 | 65.4 |
+| 3D-EASE1 |52.2| 68.1 |
+| 3D-EASE2 | 68.4 | 82.4 |
+| Ours | **70.1** | **84.1** |
+
+![screenshot](https://cdn.z.wiki/autoupload/20241126/qhVF/615X416/Experiment2.png)
   
 ## 💻Code
