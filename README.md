@@ -61,5 +61,12 @@ Boosting the Class-Incremental Learning in 3D Point Clouds via Zero-Collection-C
   open3d 0.18 <br>
   scikit-learn 1.5.0 <br>
   torch 1.13.1+cu117 <br>
+  GCC >= 4.9
   
 - **Acknowledgments**
+
+  The following repos provide helpful components/functions in our work: <br>
+  [LAMDA-PILOT](https://github.com/sun-hailong/LAMDA-PILOT) <br>
+  [PyCIL](https://github.com/G-U-N/PyCIL) <br>
+  [POINT-BERT](https://github.com/Julie-tang00/Point-BERT) <br>
+  [CosineLinear](https://github.com/hshustc/CVPR19_Incremental_Learning/blob/master/cifar100-class-incremental/modified_linear.py)
