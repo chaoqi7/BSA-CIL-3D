@@ -50,6 +50,9 @@ Boosting the Class-Incremental Learning in 3D Point Clouds via Zero-Collection-C
 ## 💻Code
 
 - **Run Experiment**
+  The continual learning starts with [main_3DShape.py](./main_3DShape.py)
+  The experiment configurations can be set in [cil_config.json](./exps/cil_config.json)
+
 
 - **Environment**
 
