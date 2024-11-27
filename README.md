@@ -58,4 +58,13 @@ Boosting the Class-Incremental Learning in 3D Point Clouds via Zero-Collection-C
 
 - **Environment**
 
+  python 3.8
+  
+  open3d 0.18
+
+  scikit-learn 1.5.0
+
+  torch 1.13.1+cu117
+  
+
 - **Acknowledgments**
